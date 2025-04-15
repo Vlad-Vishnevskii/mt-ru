@@ -19,4 +19,17 @@
   &_hide {
     transform: translateY(-110%);
   }
+
+  &_avatar {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+  }
+
+  &_title {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  }
 }

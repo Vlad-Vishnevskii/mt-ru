@@ -13,8 +13,11 @@ export const SideBar = () => {
       <ul className={styles.sidebar_list}>
         {navigationItems.map(item => (
           <li className={styles.sidebar_link} key={item.id}>
-            {item.icon}
-            {item.title}
+            <div className={styles.sidebar_icon}>{item.icon}</div>
+            <div className={styles.sidebar_item}>{item.title}</div>
+            {!!item.notifiCount && (
+              <div className={styles.sidebar_notifiCount}>{item.notifiCount}</div>
+            )}
           </li>
         ))}
       </ul>

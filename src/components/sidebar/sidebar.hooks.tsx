@@ -31,12 +31,14 @@ export const useSidebar = () => {
       icon: <BellIcon />,
       id: 5,
       title: 'Уведомления',
+      notifiCount: 1,
     },
     {
       href: '/',
       icon: <ChatIcon />,
       id: 6,
       title: 'Чаты',
+      notifiCount: 1,
     },
   ];
 

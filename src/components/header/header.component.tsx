@@ -28,8 +28,14 @@ export const Header: React.FC<Props> = ({ scrollContainerRef }) => {
       })}
     >
       <div className={styles.header_container}>
-        <img src="./avatar.png" alt="Avatar" width={38} height={38} />
-        <h3>Лента</h3>
+        <img
+          className={styles.header_avatar}
+          src="./avatar.png"
+          alt="Avatar"
+          width={38}
+          height={38}
+        />
+        <h3 className={styles.header_title}>Лента</h3>
       </div>
     </header>
   );
