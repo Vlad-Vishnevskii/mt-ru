@@ -4,6 +4,14 @@
   width: 100%;
   background: #ffffff;
 
+  @include vp-600 {
+    grid-template-columns: 100px 1fr;
+  }
+
+  @include vp-450 {
+    grid-template-columns: 1fr;
+  }
+
   &_container {
     position: relative;
     height: 100vh;
@@ -20,7 +28,7 @@
     width: 100%;
     max-width: 520px;
     gap: 50px;
-    padding: 0;
+    padding: 0 30px;
     list-style: none;
   }
 }

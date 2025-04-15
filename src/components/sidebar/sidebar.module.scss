@@ -11,6 +11,23 @@
   height: 100vh;
   overflow: hidden;
 
+  @include vp-600 {
+    padding-left: 6px;
+    padding-right: 16px;
+  }
+
+  @include vp-450 {
+    display: none;
+  }
+
+  &_logo {
+    img {
+      @include vp-600 {
+        width: 100%;
+      }
+    }
+  }
+
   &_list {
     display: flex;
     flex-direction: column;
@@ -34,6 +51,10 @@
     font-size: 16px;
     line-height: 125%;
     color: #1d1e21;
+
+    @include vp-600 {
+      display: none;
+    }
   }
 
   &_info {
@@ -50,6 +71,10 @@
       font-size: 13px;
       line-height: 123%;
       letter-spacing: 0.02em;
+    }
+
+    @include vp-600 {
+      display: none;
     }
   }
 

@@ -7,7 +7,7 @@ export const SideBar = () => {
   const { navigationItems } = useSidebar();
   return (
     <div className={styles.sidebar}>
-      <a href="">
+      <a className={styles.sidebar_logo} href="">
         <img src="./logo.png" alt="MT.RU"></img>
       </a>
       <ul className={styles.sidebar_list}>
