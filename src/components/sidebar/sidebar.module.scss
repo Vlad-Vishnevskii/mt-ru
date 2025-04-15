@@ -3,4 +3,39 @@
   flex-direction: column;
   background: #ffffff;
   width: 100%;
+  padding: 20px 30px;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  overflow: hidden;
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &_link {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &_info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8f98a6;
+    margin-top: auto;
+
+    span {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 123%;
+      letter-spacing: 0.02em;
+    }
+  }
 }

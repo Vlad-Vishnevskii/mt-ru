@@ -4,3 +4,4 @@ export * from './video-icon';
 export * from './chat-icon';
 export * from './bookmark-icon';
 export * from './bell-icon';
+export * from './info-icon';

@@ -1,6 +1,25 @@
-.container {
-  display: flex;
-
+.app {
+  display: grid;
+  grid-template-columns: 284px 1fr;
   width: 100%;
   background: #ffffff;
+
+  &_container {
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_postList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 520px;
+    padding-top: 20px;
+    list-style: none;
+  }
 }

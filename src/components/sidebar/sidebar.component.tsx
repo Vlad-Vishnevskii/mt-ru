@@ -1,5 +1,6 @@
 //import { Link } from 'react-router-dom';
 import { useSidebar } from './sidebar.hooks';
+import { InfoIcon } from '../../icons';
 import styles from './sidebar.module.scss';
 
 export const SideBar = () => {
@@ -9,14 +10,18 @@ export const SideBar = () => {
       <a href="">
         <img src="./logo.png" alt="MT.RU"></img>
       </a>
-      <ul>
+      <ul className={styles.sidebar_list}>
         {navigationItems.map(item => (
-          <li key={item.id}>
+          <li className={styles.sidebar_link} key={item.id}>
             {item.icon}
             {item.title}
           </li>
         ))}
       </ul>
+      <div className={styles.sidebar_info}>
+        <InfoIcon />
+        <span>О компании...</span>
+      </div>
     </div>
   );
 };
