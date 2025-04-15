@@ -3,7 +3,7 @@ import styles from './post.module.scss';
 export const Post = () => {
   return (
     <div className={styles.post}>
-      <img src="https://cdn2.thecatapi.com/images/e7v.jpg" alt="" />
+      <img src="./thumb.png" alt="" />
       <h3 className={styles.post_title}>
         Морские котики и львы: новые связи в мире морских млекопитающих
         <span className={styles.post_date}>30.02.2024</span>
