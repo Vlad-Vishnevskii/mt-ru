@@ -1,21 +1,21 @@
 import styles from './post.module.scss';
 
-export const Post = () => {
+type Props = {
+  title: string;
+  text: string;
+  date: string;
+  imgSrc: string;
+};
+
+export const Post: React.FC<Props> = ({ title, text, date, imgSrc }) => {
   return (
     <div className={styles.post}>
-      <img src="./thumb.png" alt="" />
+      <img src={imgSrc} alt="" />
       <h3 className={styles.post_title}>
-        Морские котики и львы: новые связи в мире морских млекопитающих
-        <span className={styles.post_date}>30.02.2024</span>
+        {title}
+        <span className={styles.post_date}>{date}</span>
       </h3>
-      <p className={styles.post_text}>
-        Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые
-        модификации, например, юмористические вставки или слова, которые даже отдалённо не
-        напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите
-        какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem
-        Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный
-        объём.
-      </p>
+      <p className={styles.post_text}>{text}</p>
     </div>
   );
 };
