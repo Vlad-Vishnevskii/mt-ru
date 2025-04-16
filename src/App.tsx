@@ -15,6 +15,7 @@ export const App = () => {
       setPosts(postsData);
 
       const images = await Promise.all(
+        // тут дублирую запросы через Promise.all чтобы получить разные картинки для необходимого количества постов
         postsData.map(async () => {
           try {
             const res = await fetch('https://api.thecatapi.com/v1/images/search');
