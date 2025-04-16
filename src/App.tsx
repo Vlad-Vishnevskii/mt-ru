@@ -8,7 +8,7 @@ export const App = () => {
   const [posts, setPosts] = useState<PostType[] | []>([]);
   const [postImages, setPostImages] = useState<string[]>([]);
 
-  const fetchData = async () => {
+  const fetchPosts = async () => {
     try {
       const postsResponse = await fetch('/api/posts');
       const postsData = await postsResponse.json();
@@ -33,7 +33,7 @@ export const App = () => {
   };
 
   useEffect(() => {
-    fetchData();
+    fetchPosts();
   }, []);
 
   return (
